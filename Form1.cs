@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Sanatorio_Hospital_Clinica_APP
 {
-    public partial class Form1 : Form
+    public partial class frmConsultasMedicas : Form
     {
-        public Form1()
+        public frmConsultasMedicas()
         {
             InitializeComponent();
+        }
+
+        private void frmConsultasMedicas_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

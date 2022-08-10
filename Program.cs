@@ -16,7 +16,7 @@ namespace Sanatorio_Hospital_Clinica_APP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new frmConsultasMedicas());
         }
     }
 }
