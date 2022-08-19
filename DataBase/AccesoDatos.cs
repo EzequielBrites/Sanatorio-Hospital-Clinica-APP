@@ -25,7 +25,7 @@ namespace Sanatorio_Hospital_Clinica_APP
         {
             conexion.Open();
             comando.Connection = conexion;
-            comando.CommandType = CommandType.Text;
+            comando.CommandType = CommandType.StoredProcedure;
         }
 
         public void desconectar()
@@ -33,20 +33,21 @@ namespace Sanatorio_Hospital_Clinica_APP
             conexion.Close();
         }
 
-        public DataTable consultarBD(string consultaSql)
+        public DataTable consultarBD(string sp)
         {
             DataTable tabla = new DataTable();
             conectar();
-            comando.CommandText = consultaSql;
+            comando.CommandText = sp;
             tabla.Load(comando.ExecuteReader());
+            desconectar();
             return tabla;
         }
 
-        public int actualizarBD(string consultaSql, List<Parametro> lparametros)
+        public int actualizarBD(string sp, List<Parametro> lparametros)
         {
             int filasAfectadas = 0;
             conectar();
-            comando.CommandText = consultaSql;
+            comando.CommandText = sp;
             foreach (Parametro p in lparametros)
             {
                 comando.Parameters.AddWithValue(p.pNombre, p.pValor);

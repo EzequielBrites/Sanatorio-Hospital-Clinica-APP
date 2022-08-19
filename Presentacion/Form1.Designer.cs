@@ -61,6 +61,7 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblCodigoPaciente
@@ -182,25 +183,27 @@
             // 
             // cboObraSocial
             // 
+            this.cboObraSocial.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboObraSocial.FormattingEnabled = true;
             this.cboObraSocial.Location = new System.Drawing.Point(623, 216);
             this.cboObraSocial.Name = "cboObraSocial";
-            this.cboObraSocial.Size = new System.Drawing.Size(164, 21);
+            this.cboObraSocial.Size = new System.Drawing.Size(185, 21);
             this.cboObraSocial.TabIndex = 10;
             // 
             // cboEstadoCivil
             // 
+            this.cboEstadoCivil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboEstadoCivil.FormattingEnabled = true;
             this.cboEstadoCivil.Location = new System.Drawing.Point(623, 71);
             this.cboEstadoCivil.Name = "cboEstadoCivil";
-            this.cboEstadoCivil.Size = new System.Drawing.Size(164, 21);
+            this.cboEstadoCivil.Size = new System.Drawing.Size(185, 21);
             this.cboEstadoCivil.TabIndex = 7;
             // 
             // txtNumeroPaciente
             // 
             this.txtNumeroPaciente.Location = new System.Drawing.Point(162, 72);
             this.txtNumeroPaciente.Name = "txtNumeroPaciente";
-            this.txtNumeroPaciente.Size = new System.Drawing.Size(100, 20);
+            this.txtNumeroPaciente.Size = new System.Drawing.Size(102, 20);
             this.txtNumeroPaciente.TabIndex = 0;
             // 
             // txtNombrePaciente
@@ -221,7 +224,7 @@
             // 
             this.txtEdadPaciente.Location = new System.Drawing.Point(162, 289);
             this.txtEdadPaciente.Name = "txtEdadPaciente";
-            this.txtEdadPaciente.Size = new System.Drawing.Size(58, 20);
+            this.txtEdadPaciente.Size = new System.Drawing.Size(102, 20);
             this.txtEdadPaciente.TabIndex = 3;
             // 
             // txtNumeroCelular
@@ -249,21 +252,21 @@
             // 
             this.txtDomicilio.Location = new System.Drawing.Point(623, 289);
             this.txtDomicilio.Name = "txtDomicilio";
-            this.txtDomicilio.Size = new System.Drawing.Size(164, 20);
+            this.txtDomicilio.Size = new System.Drawing.Size(185, 20);
             this.txtDomicilio.TabIndex = 11;
             // 
             // txtBarrio
             // 
             this.txtBarrio.Location = new System.Drawing.Point(623, 362);
             this.txtBarrio.Name = "txtBarrio";
-            this.txtBarrio.Size = new System.Drawing.Size(164, 20);
+            this.txtBarrio.Size = new System.Drawing.Size(185, 20);
             this.txtBarrio.TabIndex = 12;
             // 
             // txtDni
             // 
             this.txtDni.Location = new System.Drawing.Point(623, 435);
             this.txtDni.Name = "txtDni";
-            this.txtDni.Size = new System.Drawing.Size(81, 20);
+            this.txtDni.Size = new System.Drawing.Size(79, 20);
             this.txtDni.TabIndex = 13;
             // 
             // rbtFemenino
@@ -290,16 +293,17 @@
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(50, 580);
+            this.btnNuevo.Location = new System.Drawing.Point(36, 588);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(101, 38);
             this.btnNuevo.TabIndex = 14;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(187, 580);
+            this.btnEditar.Location = new System.Drawing.Point(173, 588);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(101, 38);
             this.btnEditar.TabIndex = 15;
@@ -308,7 +312,7 @@
             // 
             // btnBorrar
             // 
-            this.btnBorrar.Location = new System.Drawing.Point(329, 580);
+            this.btnBorrar.Location = new System.Drawing.Point(315, 588);
             this.btnBorrar.Name = "btnBorrar";
             this.btnBorrar.Size = new System.Drawing.Size(101, 38);
             this.btnBorrar.TabIndex = 16;
@@ -317,36 +321,50 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(474, 580);
+            this.btnCancelar.Location = new System.Drawing.Point(460, 588);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(101, 38);
             this.btnCancelar.TabIndex = 17;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(612, 580);
+            this.btnGuardar.Location = new System.Drawing.Point(598, 588);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(101, 38);
             this.btnGuardar.TabIndex = 18;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(840, 580);
+            this.btnSalir.Location = new System.Drawing.Point(826, 588);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(101, 38);
             this.btnSalir.TabIndex = 19;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(46, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(213, 24);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "Registro de pacientes";
             // 
             // frmConsultasMedicas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(997, 648);
+            this.ClientSize = new System.Drawing.Size(964, 648);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnCancelar);
@@ -424,6 +442,7 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Label label1;
     }
 }
 

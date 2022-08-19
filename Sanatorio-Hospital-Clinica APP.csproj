@@ -46,20 +46,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccesoDatos.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="DataBase\AccesoDatos.cs" />
+    <Compile Include="Presentacion\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Presentacion\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Medicos.cs" />
-    <Compile Include="Pacientes.cs" />
-    <Compile Include="Parametro.cs" />
-    <Compile Include="Personas.cs" />
+    <Compile Include="Dominio\Medicos.cs" />
+    <Compile Include="Dominio\Pacientes.cs" />
+    <Compile Include="Dominio\Parametro.cs" />
+    <Compile Include="Dominio\Personas.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="Presentacion\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

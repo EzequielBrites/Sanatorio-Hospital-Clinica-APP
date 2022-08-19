@@ -52,7 +52,7 @@ namespace Sanatorio_Hospital_Clinica_APP
 
         public override string ToString()
         {
-            return nombre+apellido+domicilio+eMail+dni+celular+edad+estadoCivil+fechaNacimiento+sexo;
+            return nombre+apellido;
         }
     }
 }
