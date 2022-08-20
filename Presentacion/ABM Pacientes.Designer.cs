@@ -62,12 +62,18 @@
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.herramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblCodigoPaciente
             // 
             this.lblCodigoPaciente.AutoSize = true;
-            this.lblCodigoPaciente.Location = new System.Drawing.Point(56, 70);
+            this.lblCodigoPaciente.Location = new System.Drawing.Point(65, 112);
             this.lblCodigoPaciente.Name = "lblCodigoPaciente";
             this.lblCodigoPaciente.Size = new System.Drawing.Size(85, 13);
             this.lblCodigoPaciente.TabIndex = 0;
@@ -76,7 +82,7 @@
             // lblApellidoPaciente
             // 
             this.lblApellidoPaciente.AutoSize = true;
-            this.lblApellidoPaciente.Location = new System.Drawing.Point(97, 216);
+            this.lblApellidoPaciente.Location = new System.Drawing.Point(106, 258);
             this.lblApellidoPaciente.Name = "lblApellidoPaciente";
             this.lblApellidoPaciente.Size = new System.Drawing.Size(44, 13);
             this.lblApellidoPaciente.TabIndex = 1;
@@ -85,7 +91,7 @@
             // lblEdad
             // 
             this.lblEdad.AutoSize = true;
-            this.lblEdad.Location = new System.Drawing.Point(109, 289);
+            this.lblEdad.Location = new System.Drawing.Point(118, 331);
             this.lblEdad.Name = "lblEdad";
             this.lblEdad.Size = new System.Drawing.Size(32, 13);
             this.lblEdad.TabIndex = 2;
@@ -94,7 +100,7 @@
             // lblFechaNacimiento
             // 
             this.lblFechaNacimiento.AutoSize = true;
-            this.lblFechaNacimiento.Location = new System.Drawing.Point(35, 362);
+            this.lblFechaNacimiento.Location = new System.Drawing.Point(44, 404);
             this.lblFechaNacimiento.Name = "lblFechaNacimiento";
             this.lblFechaNacimiento.Size = new System.Drawing.Size(106, 13);
             this.lblFechaNacimiento.TabIndex = 3;
@@ -103,7 +109,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(47, 435);
+            this.label5.Location = new System.Drawing.Point(56, 477);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(94, 13);
             this.label5.TabIndex = 4;
@@ -112,7 +118,7 @@
             // lblNombrePaciente
             // 
             this.lblNombrePaciente.AutoSize = true;
-            this.lblNombrePaciente.Location = new System.Drawing.Point(97, 143);
+            this.lblNombrePaciente.Location = new System.Drawing.Point(106, 185);
             this.lblNombrePaciente.Name = "lblNombrePaciente";
             this.lblNombrePaciente.Size = new System.Drawing.Size(44, 13);
             this.lblNombrePaciente.TabIndex = 5;
@@ -121,7 +127,7 @@
             // lblSexo
             // 
             this.lblSexo.AutoSize = true;
-            this.lblSexo.Location = new System.Drawing.Point(553, 143);
+            this.lblSexo.Location = new System.Drawing.Point(562, 185);
             this.lblSexo.Name = "lblSexo";
             this.lblSexo.Size = new System.Drawing.Size(31, 13);
             this.lblSexo.TabIndex = 6;
@@ -130,7 +136,7 @@
             // lblEstadoCivil
             // 
             this.lblEstadoCivil.AutoSize = true;
-            this.lblEstadoCivil.Location = new System.Drawing.Point(522, 70);
+            this.lblEstadoCivil.Location = new System.Drawing.Point(531, 112);
             this.lblEstadoCivil.Name = "lblEstadoCivil";
             this.lblEstadoCivil.Size = new System.Drawing.Size(62, 13);
             this.lblEstadoCivil.TabIndex = 7;
@@ -139,7 +145,7 @@
             // lblDomicilio
             // 
             this.lblDomicilio.AutoSize = true;
-            this.lblDomicilio.Location = new System.Drawing.Point(535, 289);
+            this.lblDomicilio.Location = new System.Drawing.Point(544, 331);
             this.lblDomicilio.Name = "lblDomicilio";
             this.lblDomicilio.Size = new System.Drawing.Size(49, 13);
             this.lblDomicilio.TabIndex = 8;
@@ -148,7 +154,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(522, 216);
+            this.label10.Location = new System.Drawing.Point(531, 258);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(62, 13);
             this.label10.TabIndex = 9;
@@ -157,7 +163,7 @@
             // lblBarrio
             // 
             this.lblBarrio.AutoSize = true;
-            this.lblBarrio.Location = new System.Drawing.Point(550, 362);
+            this.lblBarrio.Location = new System.Drawing.Point(559, 404);
             this.lblBarrio.Name = "lblBarrio";
             this.lblBarrio.Size = new System.Drawing.Size(34, 13);
             this.lblBarrio.TabIndex = 10;
@@ -166,7 +172,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(503, 435);
+            this.label12.Location = new System.Drawing.Point(512, 477);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(81, 13);
             this.label12.TabIndex = 11;
@@ -175,7 +181,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(106, 508);
+            this.label13.Location = new System.Drawing.Point(115, 550);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(35, 13);
             this.label13.TabIndex = 12;
@@ -185,7 +191,7 @@
             // 
             this.cboObraSocial.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboObraSocial.FormattingEnabled = true;
-            this.cboObraSocial.Location = new System.Drawing.Point(623, 216);
+            this.cboObraSocial.Location = new System.Drawing.Point(632, 258);
             this.cboObraSocial.Name = "cboObraSocial";
             this.cboObraSocial.Size = new System.Drawing.Size(185, 21);
             this.cboObraSocial.TabIndex = 10;
@@ -194,77 +200,77 @@
             // 
             this.cboEstadoCivil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboEstadoCivil.FormattingEnabled = true;
-            this.cboEstadoCivil.Location = new System.Drawing.Point(623, 71);
+            this.cboEstadoCivil.Location = new System.Drawing.Point(632, 113);
             this.cboEstadoCivil.Name = "cboEstadoCivil";
             this.cboEstadoCivil.Size = new System.Drawing.Size(185, 21);
             this.cboEstadoCivil.TabIndex = 7;
             // 
             // txtNumeroPaciente
             // 
-            this.txtNumeroPaciente.Location = new System.Drawing.Point(162, 72);
+            this.txtNumeroPaciente.Location = new System.Drawing.Point(171, 114);
             this.txtNumeroPaciente.Name = "txtNumeroPaciente";
             this.txtNumeroPaciente.Size = new System.Drawing.Size(102, 20);
             this.txtNumeroPaciente.TabIndex = 0;
             // 
             // txtNombrePaciente
             // 
-            this.txtNombrePaciente.Location = new System.Drawing.Point(162, 145);
+            this.txtNombrePaciente.Location = new System.Drawing.Point(171, 187);
             this.txtNombrePaciente.Name = "txtNombrePaciente";
             this.txtNombrePaciente.Size = new System.Drawing.Size(164, 20);
             this.txtNombrePaciente.TabIndex = 1;
             // 
             // txtApellidoPaciente
             // 
-            this.txtApellidoPaciente.Location = new System.Drawing.Point(162, 219);
+            this.txtApellidoPaciente.Location = new System.Drawing.Point(171, 261);
             this.txtApellidoPaciente.Name = "txtApellidoPaciente";
             this.txtApellidoPaciente.Size = new System.Drawing.Size(164, 20);
             this.txtApellidoPaciente.TabIndex = 2;
             // 
             // txtEdadPaciente
             // 
-            this.txtEdadPaciente.Location = new System.Drawing.Point(162, 289);
+            this.txtEdadPaciente.Location = new System.Drawing.Point(171, 331);
             this.txtEdadPaciente.Name = "txtEdadPaciente";
             this.txtEdadPaciente.Size = new System.Drawing.Size(102, 20);
             this.txtEdadPaciente.TabIndex = 3;
             // 
             // txtNumeroCelular
             // 
-            this.txtNumeroCelular.Location = new System.Drawing.Point(162, 435);
+            this.txtNumeroCelular.Location = new System.Drawing.Point(171, 477);
             this.txtNumeroCelular.Name = "txtNumeroCelular";
             this.txtNumeroCelular.Size = new System.Drawing.Size(135, 20);
             this.txtNumeroCelular.TabIndex = 5;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(161, 508);
+            this.txtEmail.Location = new System.Drawing.Point(170, 550);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(201, 20);
             this.txtEmail.TabIndex = 6;
             // 
             // dtpFechaNacimiento
             // 
-            this.dtpFechaNacimiento.Location = new System.Drawing.Point(162, 362);
+            this.dtpFechaNacimiento.Location = new System.Drawing.Point(171, 404);
             this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
             this.dtpFechaNacimiento.Size = new System.Drawing.Size(200, 20);
             this.dtpFechaNacimiento.TabIndex = 4;
             // 
             // txtDomicilio
             // 
-            this.txtDomicilio.Location = new System.Drawing.Point(623, 289);
+            this.txtDomicilio.Location = new System.Drawing.Point(632, 331);
             this.txtDomicilio.Name = "txtDomicilio";
             this.txtDomicilio.Size = new System.Drawing.Size(185, 20);
             this.txtDomicilio.TabIndex = 11;
             // 
             // txtBarrio
             // 
-            this.txtBarrio.Location = new System.Drawing.Point(623, 362);
+            this.txtBarrio.Location = new System.Drawing.Point(632, 404);
             this.txtBarrio.Name = "txtBarrio";
             this.txtBarrio.Size = new System.Drawing.Size(185, 20);
             this.txtBarrio.TabIndex = 12;
             // 
             // txtDni
             // 
-            this.txtDni.Location = new System.Drawing.Point(623, 435);
+            this.txtDni.Location = new System.Drawing.Point(632, 477);
             this.txtDni.Name = "txtDni";
             this.txtDni.Size = new System.Drawing.Size(79, 20);
             this.txtDni.TabIndex = 13;
@@ -272,7 +278,7 @@
             // rbtFemenino
             // 
             this.rbtFemenino.AutoSize = true;
-            this.rbtFemenino.Location = new System.Drawing.Point(623, 143);
+            this.rbtFemenino.Location = new System.Drawing.Point(632, 185);
             this.rbtFemenino.Name = "rbtFemenino";
             this.rbtFemenino.Size = new System.Drawing.Size(71, 17);
             this.rbtFemenino.TabIndex = 8;
@@ -283,7 +289,7 @@
             // rbtMasculino
             // 
             this.rbtMasculino.AutoSize = true;
-            this.rbtMasculino.Location = new System.Drawing.Point(735, 143);
+            this.rbtMasculino.Location = new System.Drawing.Point(744, 185);
             this.rbtMasculino.Name = "rbtMasculino";
             this.rbtMasculino.Size = new System.Drawing.Size(73, 17);
             this.rbtMasculino.TabIndex = 9;
@@ -293,7 +299,7 @@
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(36, 588);
+            this.btnNuevo.Location = new System.Drawing.Point(47, 616);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(101, 38);
             this.btnNuevo.TabIndex = 14;
@@ -303,16 +309,17 @@
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(173, 588);
+            this.btnEditar.Location = new System.Drawing.Point(184, 616);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(101, 38);
             this.btnEditar.TabIndex = 15;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnBorrar
             // 
-            this.btnBorrar.Location = new System.Drawing.Point(315, 588);
+            this.btnBorrar.Location = new System.Drawing.Point(326, 616);
             this.btnBorrar.Name = "btnBorrar";
             this.btnBorrar.Size = new System.Drawing.Size(101, 38);
             this.btnBorrar.TabIndex = 16;
@@ -321,7 +328,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(460, 588);
+            this.btnCancelar.Location = new System.Drawing.Point(471, 616);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(101, 38);
             this.btnCancelar.TabIndex = 17;
@@ -331,7 +338,7 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(598, 588);
+            this.btnGuardar.Location = new System.Drawing.Point(609, 616);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(101, 38);
             this.btnGuardar.TabIndex = 18;
@@ -341,7 +348,7 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(826, 588);
+            this.btnSalir.Location = new System.Drawing.Point(837, 616);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(101, 38);
             this.btnSalir.TabIndex = 19;
@@ -353,17 +360,56 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(46, 9);
+            this.label1.Location = new System.Drawing.Point(60, 52);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(213, 24);
             this.label1.TabIndex = 20;
             this.label1.Text = "Registro de pacientes";
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.archivoToolStripMenuItem,
+            this.herramientasToolStripMenuItem,
+            this.ayudaToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(989, 24);
+            this.menuStrip1.TabIndex = 21;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // archivoToolStripMenuItem
+            // 
+            this.archivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.listaToolStripMenuItem});
+            this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
+            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.archivoToolStripMenuItem.Text = "Archivo";
+            // 
+            // herramientasToolStripMenuItem
+            // 
+            this.herramientasToolStripMenuItem.Name = "herramientasToolStripMenuItem";
+            this.herramientasToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
+            this.herramientasToolStripMenuItem.Text = "Herramientas";
+            // 
+            // ayudaToolStripMenuItem
+            // 
+            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.ayudaToolStripMenuItem.Text = "Ayuda";
+            // 
+            // listaToolStripMenuItem
+            // 
+            this.listaToolStripMenuItem.Name = "listaToolStripMenuItem";
+            this.listaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listaToolStripMenuItem.Text = "lista";
+            this.listaToolStripMenuItem.Click += new System.EventHandler(this.listaToolStripMenuItem_Click);
+            // 
             // frmConsultasMedicas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(964, 648);
+            this.ClientSize = new System.Drawing.Size(989, 678);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnGuardar);
@@ -398,10 +444,14 @@
             this.Controls.Add(this.lblEdad);
             this.Controls.Add(this.lblApellidoPaciente);
             this.Controls.Add(this.lblCodigoPaciente);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmConsultasMedicas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ABM PACIENTES";
             this.Load += new System.EventHandler(this.frmConsultasMedicas_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -443,6 +493,11 @@
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem herramientasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listaToolStripMenuItem;
     }
 }
 

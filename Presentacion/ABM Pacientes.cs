@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Sanatorio_Hospital_Clinica_APP.Presentacion;
 
 namespace Sanatorio_Hospital_Clinica_APP
 {
@@ -79,6 +80,7 @@ namespace Sanatorio_Hospital_Clinica_APP
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            lparametros.Clear();
             Pacientes p = new Pacientes();
             p.Apellido = txtApellidoPaciente.Text;
             p.Nombre = txtNombrePaciente.Text;
@@ -87,7 +89,7 @@ namespace Sanatorio_Hospital_Clinica_APP
             else
                 p.Sexo = 2;
             p.Celular = Convert.ToInt32(txtNumeroCelular.Text);
-            p.Dni = Convert.ToInt32(txtDni);
+            p.Dni = Convert.ToInt32(txtDni.Text);
             p.Domicilio = txtDomicilio.Text;
             p.EMail = txtEmail.Text;
             p.EstadoCivil = cboEstadoCivil.SelectedIndex;
@@ -100,10 +102,10 @@ namespace Sanatorio_Hospital_Clinica_APP
             lparametros.Add(new Parametro("@celular", p.Celular));
             lparametros.Add(new Parametro("@e_mail", p.EMail));
             lparametros.Add(new Parametro("@edad", p.Edad));
-            lparametros.Add(new Parametro("@cod_estado_civil", p.EstadoCivil));
+            lparametros.Add(new Parametro("@estado_civil", p.EstadoCivil));
             lparametros.Add(new Parametro("@fecha_nacimiento", p.FechaNacimiento));
             lparametros.Add(new Parametro("@dni", p.Dni));
-            lparametros.Add(new Parametro("@cod_obra_social", p.ObraSocial));
+            lparametros.Add(new Parametro("@obrasocial", p.ObraSocial));
             lparametros.Add(new Parametro("@sexo", p.Sexo));
             if(oBD.actualizarBD("sp_insertar_paciente", lparametros)>0)
 
@@ -111,6 +113,18 @@ namespace Sanatorio_Hospital_Clinica_APP
                 MessageBox.Show("Se ingreso con exito el paciente");
             }
             
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            FrmListaPacientesMedicos frmpm = new FrmListaPacientesMedicos();
+            frmpm.ShowDialog();
+            frmpm.Dispose();
+        }
+
+        private void listaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

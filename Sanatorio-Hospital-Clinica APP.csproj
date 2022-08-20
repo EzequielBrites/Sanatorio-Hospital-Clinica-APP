@@ -47,20 +47,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataBase\AccesoDatos.cs" />
-    <Compile Include="Presentacion\Form1.cs">
+    <Compile Include="Presentacion\ABM Pacientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Presentacion\ABM Pacientes.Designer.cs">
+      <DependentUpon>ABM Pacientes.cs</DependentUpon>
     </Compile>
     <Compile Include="Dominio\Medicos.cs" />
     <Compile Include="Dominio\Pacientes.cs" />
     <Compile Include="Dominio\Parametro.cs" />
     <Compile Include="Dominio\Personas.cs" />
+    <Compile Include="Presentacion\FrmListaPacientesMedicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\FrmListaPacientesMedicos.Designer.cs">
+      <DependentUpon>FrmListaPacientesMedicos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Presentacion\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Presentacion\ABM Pacientes.resx">
+      <DependentUpon>ABM Pacientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\FrmListaPacientesMedicos.resx">
+      <DependentUpon>FrmListaPacientesMedicos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
