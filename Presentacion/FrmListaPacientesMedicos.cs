@@ -12,15 +12,13 @@ namespace Sanatorio_Hospital_Clinica_APP.Presentacion
 {
     public partial class FrmListaPacientesMedicos : Form
     {
-        List<Medicos> lmedicos;
-        List<Pacientes> lpacientes;
+        List<Pacientes> lAfiliados;
         AccesoDatos oBD;
         public FrmListaPacientesMedicos()
         {
             InitializeComponent();
-            lmedicos = new List<Medicos>();
-            lpacientes = new List<Pacientes>();
             oBD = new AccesoDatos();
+            lAfiliados = new List<Pacientes>();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -30,8 +28,7 @@ namespace Sanatorio_Hospital_Clinica_APP.Presentacion
         public void cargarGrilla(string sp)
         {
             Pacientes p = new Pacientes();
-            lpacientes.Clear();
-            lmedicos.Clear();
+            lAfiliados.Clear();
             DataTable tabla = new DataTable();
             tabla = oBD.consultarBD(sp);
             for (int i = 0; i < tabla.Rows.Count; i++)
@@ -43,53 +40,26 @@ namespace Sanatorio_Hospital_Clinica_APP.Presentacion
         }
         private void FrmListaPacientesMedicos_Load(object sender, EventArgs e)
         {
-            btnActualizar.Enabled = false;
-            btnAceptar.Enabled = false;
-            btnCancelarList.Enabled = false;
-            btnCerrar.Enabled = true;
-
-          
+            btnSeleccionar.Enabled = false;
+            btnCancelar.Enabled = true;
+            cargarGrilla("sp_consultar_pacientes");
         }
 
-        private void btnActualizar_Click(object sender, EventArgs e)
+        private void btnCancelar_Click(object sender, EventArgs e)
         {
-            if(cbMedicos.Checked==true)
-            {
-                cargarGrilla("sp_consultar_medicos");
-            }
-            else
-            {
-                cargarGrilla("sp_consultar_pacientes");
-            }
-        }
-
-        private void cbPacientes_CheckedChanged(object sender, EventArgs e)
-        {
-            if(cbPacientes.Checked== true)
-            {
-                cbMedicos.Checked = false;
-                
-            }
-            btnActualizar.Enabled = true;
-            
-          
-        }
-
-        private void cbMedicos_CheckedChanged(object sender, EventArgs e)
-        {
-            if (cbMedicos.Checked == true)
-            {
-                cbPacientes.Checked = false;
-                
-            }
-            btnActualizar.Enabled = true;
-
-        }
-
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-           
                 this.Close();
+        }
+
+        private void btnCancelar_Click_1(object sender, EventArgs e)
+        {
+            if(MessageBox.Show("Seguro que desea cancelar?","Cancelar",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question,
+                MessageBoxDefaultButton.Button2)== DialogResult.Yes)
+            {
+                this.Close();
+            }
+
         }
     }
 }

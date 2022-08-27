@@ -24,7 +24,6 @@ namespace Sanatorio_Hospital_Clinica_APP
 
         private void frmConsultasMedicas_Load(object sender, EventArgs e)
         {
-            cargarCombos(cboObraSocial,"sp_consultar_obra_social");
             cargarCombos(cboEstadoCivil,"sp_consultar_estado_civil");
             txtNumeroPaciente.Enabled = false;
             habilitar(false);
@@ -41,7 +40,6 @@ namespace Sanatorio_Hospital_Clinica_APP
             txtNumeroCelular.Enabled = x;
             txtEmail.Enabled = x;
             cboEstadoCivil.Enabled = x;
-            cboObraSocial.Enabled = x;
             btnBorrar.Enabled = x;
             btnCancelar.Enabled = x;
             btnSalir.Enabled = !x;
@@ -88,12 +86,11 @@ namespace Sanatorio_Hospital_Clinica_APP
                 p.Sexo = 1;
             else
                 p.Sexo = 2;
-            p.Celular = Convert.ToInt32(txtNumeroCelular.Text);
+            //p.Celular = Convert.ToInt64(txtNumeroCelular.Text);
             p.Dni = Convert.ToInt32(txtDni.Text);
             p.Domicilio = txtDomicilio.Text;
             p.EMail = txtEmail.Text;
             p.EstadoCivil = cboEstadoCivil.SelectedIndex;
-            p.ObraSocial = cboObraSocial.SelectedIndex;
             p.FechaNacimiento = dtpFechaNacimiento.Value;
 
             lparametros.Add(new Parametro("@apellido", p.Apellido));

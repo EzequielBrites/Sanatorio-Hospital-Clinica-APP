@@ -9,7 +9,8 @@ namespace Sanatorio_Hospital_Clinica_APP
     internal abstract class Personas
     {
         private string nombre, apellido, domicilio, eMail;
-        private int dni, celular, edad, estadoCivil, sexo;
+        private int dni, edad, estadoCivil, sexo;
+        private long celular;
         private DateTime fechaNacimiento;
 
         public string Nombre { set { nombre = value; } get { return nombre; } }
@@ -17,7 +18,7 @@ namespace Sanatorio_Hospital_Clinica_APP
         public string Domicilio { set { domicilio = value; } get { return domicilio; } }
         public string EMail { set { eMail = value; } get { return eMail; } }
         public int Dni { set { dni = value; } get { return dni; } }
-        public int Celular { set { celular = value; } get { return celular; } }
+        public long Celular { set { celular = value; } get { return celular; } }
         public int Edad { set { edad = value; } get { return edad; } }
         public int EstadoCivil { set { estadoCivil = value; } get { return estadoCivil; } }
         public DateTime FechaNacimiento { set { fechaNacimiento = value; }get { return fechaNacimiento; } }
@@ -36,7 +37,7 @@ namespace Sanatorio_Hospital_Clinica_APP
             estadoCivil = 0;
             fechaNacimiento = DateTime.Today;
         }
-        public Personas(int sexo, string nombre, string apellido, string domicilio, string eMail, int dni, int celular, int edad, int estadoCivil, DateTime fechaNacimiento)
+        public Personas(int sexo, string nombre, string apellido, string domicilio, string eMail, int dni, long celular, int edad, int estadoCivil, DateTime fechaNacimiento)
         {
             this.nombre = nombre;
             this.sexo = sexo;

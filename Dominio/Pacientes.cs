@@ -8,9 +8,10 @@ namespace Sanatorio_Hospital_Clinica_APP
 {
     internal class Pacientes : Personas
     {
-        private int codPaciente, obraSocial, barrio, localidad, provincia;
+        private int obraSocial, barrio, localidad, provincia, codAfiliado;
+        
 
-        public int CodPaciente { set { codPaciente = value; } get { return codPaciente; } }
+        public int CodAfiliado { set { codAfiliado = value; } get { return codAfiliado; } }
         public int ObraSocial { set { obraSocial = value; } get { return obraSocial; } }
         public int Barrio { set { barrio = value; } get { return barrio; } }
         public int Localidad { set { localidad = value; } get { return localidad; } }
@@ -18,16 +19,16 @@ namespace Sanatorio_Hospital_Clinica_APP
 
         public Pacientes () : base()
         {
-            codPaciente = 0;
+            codAfiliado = 0;
             obraSocial = 0;
             barrio = 0;
             localidad = 0;
             provincia = 0;
         }
-        public Pacientes(int codPaciente, int obraSocial, int barrio, int localidad, int provincia,int sexo, string nombre, string apellido,string domicilio, string eMail,int dni,int celular,int edad,int estadoCivil,DateTime fechaNacimiento) : base 
+        public Pacientes(int codAfiliado, int obraSocial, int barrio, int localidad, int provincia,int sexo, string nombre, string apellido,string domicilio, string eMail,int dni,long celular,int edad,int estadoCivil,DateTime fechaNacimiento) : base 
             (sexo,nombre,apellido,domicilio,eMail,dni,celular,edad,estadoCivil,fechaNacimiento)
         {
-            this.codPaciente = codPaciente;
+            this.codAfiliado = codAfiliado;
             this.obraSocial = obraSocial;
             this.barrio = barrio;
             this.localidad = localidad;
@@ -35,7 +36,7 @@ namespace Sanatorio_Hospital_Clinica_APP
         }
         public override string ToString()
         {
-            return base.ToString() + codPaciente + obraSocial + barrio + localidad + provincia;
+            return base.ToString() + codAfiliado + obraSocial + barrio + localidad + provincia;
         }
 
     }

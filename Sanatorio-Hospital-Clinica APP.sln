@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sanatorio-Hospital-Clinica APP", "Sanatorio-Hospital-Clinica APP.csproj", "{E64D852B-47FB-4616-8BF0-570113093C00}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "carpinteria1w4", "..\..\..\Desktop\carpinteria1w4\carpinteria1w4\carpinteria1w4.csproj", "{AF136B10-5AF2-41FA-A4E0-FF7CDA5651D5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABM Obra Social", "ABM Obra Social.csproj", "{E64D852B-47FB-4616-8BF0-570113093C00}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +15,6 @@ Global
 		{E64D852B-47FB-4616-8BF0-570113093C00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E64D852B-47FB-4616-8BF0-570113093C00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E64D852B-47FB-4616-8BF0-570113093C00}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AF136B10-5AF2-41FA-A4E0-FF7CDA5651D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AF136B10-5AF2-41FA-A4E0-FF7CDA5651D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AF136B10-5AF2-41FA-A4E0-FF7CDA5651D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AF136B10-5AF2-41FA-A4E0-FF7CDA5651D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

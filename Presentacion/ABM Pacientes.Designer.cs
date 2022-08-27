@@ -37,11 +37,9 @@
             this.lblSexo = new System.Windows.Forms.Label();
             this.lblEstadoCivil = new System.Windows.Forms.Label();
             this.lblDomicilio = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.lblBarrio = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.cboObraSocial = new System.Windows.Forms.ComboBox();
             this.cboEstadoCivil = new System.Windows.Forms.ComboBox();
             this.txtNumeroPaciente = new System.Windows.Forms.TextBox();
             this.txtNombrePaciente = new System.Windows.Forms.TextBox();
@@ -64,9 +62,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.herramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,9 +73,9 @@
             this.lblCodigoPaciente.AutoSize = true;
             this.lblCodigoPaciente.Location = new System.Drawing.Point(65, 112);
             this.lblCodigoPaciente.Name = "lblCodigoPaciente";
-            this.lblCodigoPaciente.Size = new System.Drawing.Size(85, 13);
+            this.lblCodigoPaciente.Size = new System.Drawing.Size(77, 13);
             this.lblCodigoPaciente.TabIndex = 0;
-            this.lblCodigoPaciente.Text = "Codigo Paciente";
+            this.lblCodigoPaciente.Text = "Codigo Afiliado";
             // 
             // lblApellidoPaciente
             // 
@@ -100,7 +98,7 @@
             // lblFechaNacimiento
             // 
             this.lblFechaNacimiento.AutoSize = true;
-            this.lblFechaNacimiento.Location = new System.Drawing.Point(44, 404);
+            this.lblFechaNacimiento.Location = new System.Drawing.Point(505, 400);
             this.lblFechaNacimiento.Name = "lblFechaNacimiento";
             this.lblFechaNacimiento.Size = new System.Drawing.Size(106, 13);
             this.lblFechaNacimiento.TabIndex = 3;
@@ -109,7 +107,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(56, 477);
+            this.label5.Location = new System.Drawing.Point(55, 463);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(94, 13);
             this.label5.TabIndex = 4;
@@ -145,25 +143,16 @@
             // lblDomicilio
             // 
             this.lblDomicilio.AutoSize = true;
-            this.lblDomicilio.Location = new System.Drawing.Point(544, 331);
+            this.lblDomicilio.Location = new System.Drawing.Point(544, 258);
             this.lblDomicilio.Name = "lblDomicilio";
             this.lblDomicilio.Size = new System.Drawing.Size(49, 13);
             this.lblDomicilio.TabIndex = 8;
             this.lblDomicilio.Text = "Domicilio";
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(531, 258);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(62, 13);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "Obra Social";
-            // 
             // lblBarrio
             // 
             this.lblBarrio.AutoSize = true;
-            this.lblBarrio.Location = new System.Drawing.Point(559, 404);
+            this.lblBarrio.Location = new System.Drawing.Point(559, 331);
             this.lblBarrio.Name = "lblBarrio";
             this.lblBarrio.Size = new System.Drawing.Size(34, 13);
             this.lblBarrio.TabIndex = 10;
@@ -172,7 +161,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(512, 477);
+            this.label12.Location = new System.Drawing.Point(51, 393);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(81, 13);
             this.label12.TabIndex = 11;
@@ -181,20 +170,11 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(115, 550);
+            this.label13.Location = new System.Drawing.Point(115, 535);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(35, 13);
             this.label13.TabIndex = 12;
             this.label13.Text = "E-mail";
-            // 
-            // cboObraSocial
-            // 
-            this.cboObraSocial.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboObraSocial.FormattingEnabled = true;
-            this.cboObraSocial.Location = new System.Drawing.Point(632, 258);
-            this.cboObraSocial.Name = "cboObraSocial";
-            this.cboObraSocial.Size = new System.Drawing.Size(185, 21);
-            this.cboObraSocial.TabIndex = 10;
             // 
             // cboEstadoCivil
             // 
@@ -235,42 +215,42 @@
             // 
             // txtNumeroCelular
             // 
-            this.txtNumeroCelular.Location = new System.Drawing.Point(171, 477);
+            this.txtNumeroCelular.Location = new System.Drawing.Point(170, 463);
             this.txtNumeroCelular.Name = "txtNumeroCelular";
             this.txtNumeroCelular.Size = new System.Drawing.Size(135, 20);
             this.txtNumeroCelular.TabIndex = 5;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(170, 550);
+            this.txtEmail.Location = new System.Drawing.Point(170, 535);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(201, 20);
             this.txtEmail.TabIndex = 6;
             // 
             // dtpFechaNacimiento
             // 
-            this.dtpFechaNacimiento.Location = new System.Drawing.Point(171, 404);
+            this.dtpFechaNacimiento.Location = new System.Drawing.Point(632, 400);
             this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
             this.dtpFechaNacimiento.Size = new System.Drawing.Size(200, 20);
             this.dtpFechaNacimiento.TabIndex = 4;
             // 
             // txtDomicilio
             // 
-            this.txtDomicilio.Location = new System.Drawing.Point(632, 331);
+            this.txtDomicilio.Location = new System.Drawing.Point(632, 258);
             this.txtDomicilio.Name = "txtDomicilio";
             this.txtDomicilio.Size = new System.Drawing.Size(185, 20);
             this.txtDomicilio.TabIndex = 11;
             // 
             // txtBarrio
             // 
-            this.txtBarrio.Location = new System.Drawing.Point(632, 404);
+            this.txtBarrio.Location = new System.Drawing.Point(632, 331);
             this.txtBarrio.Name = "txtBarrio";
             this.txtBarrio.Size = new System.Drawing.Size(185, 20);
             this.txtBarrio.TabIndex = 12;
             // 
             // txtDni
             // 
-            this.txtDni.Location = new System.Drawing.Point(632, 477);
+            this.txtDni.Location = new System.Drawing.Point(171, 393);
             this.txtDni.Name = "txtDni";
             this.txtDni.Size = new System.Drawing.Size(79, 20);
             this.txtDni.TabIndex = 13;
@@ -362,9 +342,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(60, 52);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(213, 24);
+            this.label1.Size = new System.Drawing.Size(199, 24);
             this.label1.TabIndex = 20;
-            this.label1.Text = "Registro de pacientes";
+            this.label1.Text = "Registro de afiliados\r\n";
             // 
             // menuStrip1
             // 
@@ -386,6 +366,13 @@
             this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.archivoToolStripMenuItem.Text = "Archivo";
             // 
+            // listaToolStripMenuItem
+            // 
+            this.listaToolStripMenuItem.Name = "listaToolStripMenuItem";
+            this.listaToolStripMenuItem.Size = new System.Drawing.Size(95, 22);
+            this.listaToolStripMenuItem.Text = "lista";
+            this.listaToolStripMenuItem.Click += new System.EventHandler(this.listaToolStripMenuItem_Click);
+            // 
             // herramientasToolStripMenuItem
             // 
             this.herramientasToolStripMenuItem.Name = "herramientasToolStripMenuItem";
@@ -397,13 +384,6 @@
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
             this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
-            // 
-            // listaToolStripMenuItem
-            // 
-            this.listaToolStripMenuItem.Name = "listaToolStripMenuItem";
-            this.listaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.listaToolStripMenuItem.Text = "lista";
-            this.listaToolStripMenuItem.Click += new System.EventHandler(this.listaToolStripMenuItem_Click);
             // 
             // frmConsultasMedicas
             // 
@@ -430,11 +410,9 @@
             this.Controls.Add(this.txtNombrePaciente);
             this.Controls.Add(this.txtNumeroPaciente);
             this.Controls.Add(this.cboEstadoCivil);
-            this.Controls.Add(this.cboObraSocial);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.lblBarrio);
-            this.Controls.Add(this.label10);
             this.Controls.Add(this.lblDomicilio);
             this.Controls.Add(this.lblEstadoCivil);
             this.Controls.Add(this.lblSexo);
@@ -468,11 +446,9 @@
         private System.Windows.Forms.Label lblSexo;
         private System.Windows.Forms.Label lblEstadoCivil;
         private System.Windows.Forms.Label lblDomicilio;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label lblBarrio;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.ComboBox cboObraSocial;
         private System.Windows.Forms.ComboBox cboEstadoCivil;
         private System.Windows.Forms.TextBox txtNumeroPaciente;
         private System.Windows.Forms.TextBox txtNombrePaciente;
